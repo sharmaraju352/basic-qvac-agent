@@ -6,7 +6,6 @@ const { LLMs } = require('qvac-lib-agent-base')
 const readline = require('bare-readline')
 const process = require('bare-process')
 
-
 const persona = new QvacSoloAgPrsnAssistant({
   llm: LLMs.LLAMA,
   identifier: `
@@ -45,24 +44,23 @@ async function main () {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
-  });
-  
-  function prompt() {
+  })
+
+  function prompt () {
     process.stdout.write('You > ')
-    
-    rl.once("line", async (userInput) => {
+
+    rl.once('line', async (userInput) => {
       if (userInput.trim().toLowerCase() === 'exit') {
-        rl.close();
-        process.exit(0);
+        rl.close()
+        process.exit(0)
       }
-      const response = await agent.execute({threadId, msg: userInput})
-      console.log(`Agent > ${response.content}`);
-      prompt();
-    });
+      const response = await agent.execute({ threadId, msg: userInput })
+      console.log(`Agent > ${response.content}`)
+      prompt()
+    })
   }
-  
-  prompt();
-  
+
+  prompt()
 }
 
 main().catch(console.error)

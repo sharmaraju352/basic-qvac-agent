@@ -11,7 +11,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@tetherto/qvac-lib-inference-addon-mlc-llama-3_1_8b-q4f16_1": "^0.0.1-dev",
     "@tetherto/qvac-lib-inference-addon-mlc-llama-3_2_1b-q4f16_1": "^0.0.7-dev",
+    "@tetherto/qvac-lib-inference-addon-mlc-llama-3_2_3b-q4f16_1": "^0.0.5-dev",
+    "bare-os": "^3.6.0",
     "bare-process": "^4.1.2",
     "bare-readline": "^1.0.7",
     "corestore": "^7.0.23",
