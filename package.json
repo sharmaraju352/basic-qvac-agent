@@ -1,0 +1,27 @@
+{
+  "name": "agent-test2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tetherto/qvac-lib-inference-addon-mlc-llama-3_2_1b-q4f16_1": "^0.0.7-dev",
+    "bare-process": "^4.1.2",
+    "bare-readline": "^1.0.7",
+    "corestore": "^7.0.23",
+    "hyperbee": "^2.23.0",
+    "hyperswarm": "^4.10.0",
+    "qvac-lib-agent-solo-base": "git+ssh://git@github.com/sharmaraju352/qvac-lib-agent-solo-base.git",
+    "qvac-lib-dl-hyperdrive": "git+ssh://git@github.com/tetherto/qvac-lib-dl-hyperdrive",
+    "qvac-lib-tool-base": "git+ssh://git@github.com/tetherto/qvac-lib-tool-base.git"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
+}
