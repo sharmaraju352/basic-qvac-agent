@@ -1,10 +1,10 @@
-const { LLMs, QvacAgMsg, ENTITIES } = require('qvac-lib-agent-base')
+const { QvacAgMsg, ENTITIES } = require('qvac-lib-agent-base')
 const { QvacSoloAgent, SOLO_PERSONAS } = require('qvac-lib-agent-solo-base')
 
 class CryptoPriceAgent extends QvacSoloAgent {
   name = 'CryptoPriceAgent'
 
-  async main ({ msg }, history, llms, meta = {}) {
+  async main ({ msg }, history, llms) {
     const humanMsg = new QvacAgMsg({
       source: ENTITIES.USER,
       content: msg
